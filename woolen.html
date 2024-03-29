@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Maseúr Woolen Collection</title>
-        <script
-          src="https://kit.fontawesome.com/4f05169479.js"
-          crossorigin="anonymous"
-        ></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Playfair+Display:ital@1&family=Poppins:wght@200;400;700&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/main.css" />
-      </head>
-    <body>
-        <!--Header-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woolen Collection</title>
+    <link rel="stylesheet" href="css/woolen.css"> <!-- Ensure this path is correct -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
         <div class="wrapper">
-            <header>
-            <img src="images/logo.svg" alt="Fauxica Logo" />
+            <img src="images/LOGO.png" alt="Logo" width="10%" height="10%"/>
             <nav>
                 <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            </header>   
         </div>
-        
-    </body>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="category-picker">
+            <div class="category-card" style="background-image: url('images/sweaters.jpg');">
+                <div class="category-info">
+                    <h3>Sweaters</h3>
+                    <p>Starting from &#8377; 3499</p>
+                </div>
+            </div>
+            <div class="category-card" style="background-image: url('images/jackets.jpg');">
+                <div class="category-info">
+                    <h3>Jackets</h3>
+                    <p>Starting from &#8377; 4999</p>
+                </div>
+            </div>
+            <div class="category-card" style="background-image: url('images/hoodies.jpg');">
+                <div class="category-info">
+                    <h3>Hoodies</h3>
+                    <p>Starting from &#8377; 5999</p>
+                </div>
+            </div>
+            <div class="category-card" style="background-image: url('images/coats.jpg');">
+                <div class="category-info">
+                    <h3>Coats</h3>
+                    <p>Starting from &#8377; 6999</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <p>&copy; 2023 Maseúr Apparel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>

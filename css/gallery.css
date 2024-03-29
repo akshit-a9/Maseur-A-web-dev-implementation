@@ -1,0 +1,92 @@
+/* gallery.css */
+
+/* Reset and inherit styles from main.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Inheriting font styles from main.css */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Fullscreen Carousel Styles */
+.carousel.fullscreen-carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.carousel-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    display: none; /* Hide all slides initially */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-slide img {
+    width: 100%; /* Scale image to fit the carousel width */
+    height: 100%; /* Scale image to fit the carousel height */
+    object-fit: cover; /* Ensures no distortion while covering the area */
+}
+
+/* gallery.css - Updated styles for arrow buttons */
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 2.4rem; /* Larger font size for arrows */
+    border-radius: 50%; /* Circular shape */
+    width: 45px; /* Fixed width */
+    height: 45px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control.prev {
+    left: 15px;
+}
+
+.carousel-control.next {
+    right: 15px;
+}
+
+/* Adjust the size and position if necessary */
+
+
+/* Header Styles */
+header {
+    background-color: transparent; /* Adjust as needed */
+    color: #000; /* Adjust text color as needed */
+    padding: 1em 2em; /* Adjust padding as needed */
+    box-shadow: none; /* Remove box shadow */
+}
+
+/* Navigation Styles */
+nav ul li a {
+    color: #000; /* Adjust link color as needed */
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #444; /* Adjust active and hover color as needed */
+    border-bottom: 2px solid #444; /* Adjust underline style as needed */
+}
